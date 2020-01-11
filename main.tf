@@ -10,7 +10,7 @@ terraform {
 
 provider "digitalocean" {}
 
-resource "digitalocean_kubernetes_cluster" "looking4mage" {
+resource "digitalocean_kubernetes_cluster" "cluster" {
   name    = var.name
   region  = var.region
   version = var.k8s_version
