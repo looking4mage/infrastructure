@@ -1,6 +1,7 @@
 output "cluster_endpoint" {
   value       = digitalocean_kubernetes_cluster.cluster.endpoint
   description = "The cluster's API endpoint."
+  sensitive   = true
 }
 
 output "cluster_config" {
